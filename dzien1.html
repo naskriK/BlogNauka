@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogNauka - Jak działa git</title>
+  </head>
+  <body>
+    <h1>09.12.2023 - Dzień 1 - Jak działa git i platforma GitHub</h1>
+    <p>
+      Naucz się ze mną funkcji gita które pozwolą Ci pracować efektywnie w
+      zespole i poza nim.
+    </p>
+    <h2>Czym jest git?</h2>
+    <p>
+      Git jest narzędziem które pozwala nam zarządzać swoim projektem i jego
+      zmianami.
+    </p>
+    <p>
+      Możemy śledzić co zostało zmienione, dodawać zmienione momenty do pamięci,
+      odwracać tą pamięć. Dlatego bardzo łatwo jest odwrócić coś co zostało
+      zmienione na tyle, że nasza aplikacja przestała działać.
+    </p>
+    <p>
+      GitHub - jest platformą gdzie możemy zapisywać nasze repozytoria gitowe a
+      także trzymać tam nasze projekty.
+    </p>
+    <h2>Szybki overview na temat Terminala</h2>
+    <p>
+      Terminal będzie nam potrzebny do korzystania z funkcji gita, dlatego rzucę
+      na niego teraz okiem i opiszę działanie a także podstawowe funkcje.
+    </p>
+    <h3>Co to jest Terminal?</h3>
+    <p>
+      Terminal pozwala na pracę z systemem operacyjnym, każdy system ma swój
+      własny terminal, dzięki niemu możesz działać wprost na system. Tworzyć
+      foldery, poruszać się po nich, a także robić bardziej zaawansowane rzeczy.
+    </p>
+    <strong
+      >Terminale w systemach mogą się różnić, nie każda opisana funkcja tutaj
+      będzie działać akurat na twoim terminalu!</strong
+    >
+    <p>Podstawowe funkcje :</p>
+    <ol>
+      <li>
+        Poruszanie się (komenda :)
+        <strong>cd</strong>
+        <p>
+          Pozwala poruszać się po folderach, cd .. schodzi poziom niżej w
+          drzewie a cd (nazwa folderu) pozwala do niego wchodzić. Możemy też
+          użyć cd (ścieżka) to przeniesie nas do konkretnej ścieżki.
+        </p>
+      </li>
+      <li>
+        Tworzenie folderu (komenda :)
+        <strong>mkdir</strong>
+        <p>Pozwala stworzyć nam folder o danej nazwie.</p>
+      </li>
+      <li>
+        Usuwanie folderu (komenda :)
+        <strong>rd</strong>
+        <p>Pozwala usunąć folder o danej nazwie.</p>
+      </li>
+      <li>
+        Tworzenie pliku (komenda :)
+        <strong>copy con</strong>
+        <p>
+          Pozwala stworzyć plik o danej nazwie. Następnie dodajemy zawartość,
+          jak już jest wystarczająco klikamy CTRL+Z i enter.
+        </p>
+      </li>
+      <li>
+        Podejrzenie pliku (komenda :)
+        <strong>type</strong>
+        <p>Pozwala oglądać plik o danej nazwie.</p>
+      </li>
+      <li>
+        Usuwanie pliku (komenda :)
+        <strong>del</strong>
+        <p>Pozwala usunąć plik o danej nazwie.</p>
+      </li>
+    </ol>
+    <h2>Wszystko na temat git</h2>
+    <p>
+      Git działa na podstawie tematu "working directory". W momencie
+      inicjalizacji repozytorium gita, tworzy się working directory, miejsce w
+      którym każda nasza zmiana w folderze będzie obsługiwana i sprawdzana.
+      Następnie możemy tą zmianę zapisać za pomocą git add do staging area w
+      którym następnie możemy użyć git commit następnie nasze zmiany wędrują, do
+      miejsca w którym możemy nasze zmiany zapisać już do lokalnego repozytorium
+      czyli do miejsca w którym nasze zmiany zostają zatwierdzone i do których
+      możemy potem wracać w razie problemów. Nazywamy to local repository, w
+      momencie w którym chcemy trzymać nasze repozytorium na np. GitHub wtedy
+      wysyłając nasze repozytorium, GitHub obsługuje to jako remote repository.
+      Wtedy możemy działać na swoim repozytorium a repozytorium na GitHubie jest
+      jako miejsce do którego tylko zapisujemy to co już chcemy zapisać w naszym
+      projekcie.
+    </p>
+
+    <p>
+      Aby stworzyć repozytorium lokalne w naszym projekcie korzystamy z komendy
+      <strong>git init</strong>.
+    </p>
+
+    <p>
+      Po użyciu tej komendy wszystkie nasze pliki stają się śledzone przez Git
+      czyli każda zmiana jest już zauważalna, w tym momencie możemy już
+      zarządzać naszymi zmianami i repozytorium.
+    </p>
+
+    <p>
+      Aby sprawdzić nasze pliki śledzone i każdy etap warto skorzystać z komendy
+      <strong>git status</strong>.
+    </p>
+
+    <p>
+      Możemy dodać nasze pliki do staging area, do miejsca gdzie będą czekały
+      jako pliki które mogą być commitem do repositorum, ale w momencie w którym
+      zmienimy choćby jakiś plik będzie miał status zmodyfikowanego i będzie
+      trzeba go jeszcze raz dodać albo przywrócić. Komenda :
+      <strong>git add (plik)</strong>
+      <strong>git add --all (wszystkie pliki)</strong>
+      <strong>git restore (przywrócenie pliku)</strong>
+    </p>
+
+    <p>
+      Aby zapisać nasze wszystkie zmiany jako commit do repozytorium, korzystamy
+      z komendy <strong>git commit</strong>. Wymaga to od nas podania wiadomości
+      co zostało zmienione albo co zostało dodane. Krótki opis
+    </p>
+
+    <p>
+      Możemy sprawdzić kto stworzył commit, kiedy i jaka jest nazwa używając
+      komendy <strong>git log</strong> albo <strong>git log --oneline</strong>
+    </p>
+  </body>
+</html>
