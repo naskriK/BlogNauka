@@ -4,6 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zadania generalne</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.4;
+      }
+      article {
+        border: 5px solid #000;
+      }
+      h1 {
+        background-color: #f7f7f7;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .price {
+        font-size: 24px;
+      }
+
+      .shipping {
+        color: #777;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .more-link:link,
+      .more-link:visited {
+        color: black;
+      }
+
+      .more-link:hover {
+        text-decoration: none;
+      }
+
+      .details-title {
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+
+      .details-list {
+        list-style-type: square;
+      }
+
+      .button {
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        color: #000;
+        background-color: white;
+      }
+    </style>
   </head>
   <body>
     <article>
@@ -13,20 +70,20 @@
         alt="Converse Chuck Taylor All Star Low Top"
         height="250"
       />
-      <p><strong>$65.00</strong></p>
-      <p>Free shipping</p>
+      <p class="price"><strong>$65.00</strong></p>
+      <p class="shipping">Free shipping</p>
       <p>
         Ready to dress up or down, these classic canvas Chucks are an everyday
         wardrobe staple.
       </p>
-      <a href="#">More information &rarr;</a>
-      <h2>Product details</h2>
-      <ol>
+      <a href="#" class="more-link">More information &rarr;</a>
+      <h2 class="details-title">Product details</h2>
+      <ol class="details-list">
         <li>Lightweight, durable canvas sneaker</li>
         <li>Lightly padded footbed for added comfort</li>
         <li>Iconic Chuck Taylor ankle patch.</li>
       </ol>
-      <button>Add to cart</button>
+      <button class="button">Add to cart</button>
     </article>
   </body>
 </html>

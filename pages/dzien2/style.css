@@ -67,3 +67,13 @@ li:first-child {
 .related {
   list-style: none;
 }
+
+a:link,
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+}
